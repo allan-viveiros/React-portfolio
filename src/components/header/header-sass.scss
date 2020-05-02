@@ -1,0 +1,151 @@
+@import '../../sass/config.scss';
+
+
+.main-header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;    
+}
+
+//Main menu
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include easeOut; 
+
+    .btn-line {
+        width: 23px;
+        height: 2px;
+        margin: 0 0 5px 0;
+        background: set-text-color($primary-color);
+        @include easeOut; 
+    }
+
+    //Toggle button animation
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+            &:nth-child(1) {
+                background: $text-red;
+                transform: rotate(45deg) translate(5px, 5px);
+                width: 20px;
+            }
+
+            &:nth-child(2) {
+                visibility: hidden;
+                transform: rotate(45deg);
+                background: $text-red;
+                width: 20px;
+                
+            }
+
+            &:nth-child(3) {
+                background: $text-red;
+                transform: rotate(-45deg)  translate(5px, -5px);
+                width: 20px;
+            }
+        }
+    }
+}
+
+//Overlay menu
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+
+    &.show {
+        visibility: visible;
+    }
+
+    &-brand, &-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    //Only menu-nav
+    &-nav {
+        margin: 0;
+        padding: 0;
+        background: darken($primary-color, 10); 
+        list-style: none;
+        transform: translate3d(0, -100%, 0);
+        @include easeOut; 
+
+        &.show {
+            //slide to up side
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    //Only menu-brand
+    &-brand {
+        background: rgba($primary-color, 0.5);
+        transform: translate3d(0, 100%, 0);
+        @include easeOut;
+
+        &.show {
+            //Slide to down
+            transform: translate3d(0, 0, 0);
+        }
+
+        .portrait {
+            width: 250px;
+            height: 250px;
+            background: url('../images/Deadpool.jpg');
+            background-position: center;
+            border-radius: 50%;
+            border: solid 3px $secondary-color;
+        }
+    }
+
+    .nav-item {
+        transform: translate3d(600px, 0, 0);
+        @include easeOut;
+
+        &.show {
+            //Slide from right
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        padding: 0.5rem 0;
+        font-weight: 500;
+        color: set-text-color($primary-color);
+        text-decoration: none;
+        @include easeOut;
+        
+        &:hover {
+            color: lighten($secondary-color, 10);
+        }
+
+        &.active {
+            color: $secondary-color;
+        }
+    }
+
+}
+
+//Delay nav-item to come from right in 0.1s each
+@for $i from 1 through 4 {
+    .nav-item:nth-child(#{$i}) {
+        transition-delay: $i * 0.1s;
+    }
+}  
+
