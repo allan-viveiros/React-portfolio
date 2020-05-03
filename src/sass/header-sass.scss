@@ -1,4 +1,4 @@
-@import '../../sass/config.scss';
+@import './config.scss';
 
 
 .main-header {
@@ -101,14 +101,11 @@
             transform: translate3d(0, 0, 0);
         }
 
-        .portrait {
-            width: 250px;
-            height: 250px;
-            background: url('../images/Deadpool.jpg');
-            background-position: center;
-            border-radius: 50%;
-            border: solid 3px $secondary-color;
+        
+        .portrait {            
+            background: url('../images/Deadpool.jpg');            
         }
+        
     }
 
     .nav-item {
@@ -129,15 +126,7 @@
         font-weight: 500;
         color: set-text-color($primary-color);
         text-decoration: none;
-        @include easeOut;
-        
-        &:hover {
-            color: lighten($secondary-color, 10);
-        }
-
-        &.active {
-            color: $secondary-color;
-        }
+        @include easeOut;      
     }
 
 }

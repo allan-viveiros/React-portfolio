@@ -1,4 +1,5 @@
-@import '../sass/config.scss';
+@import './config.scss';
+
 
 .main-div {
     background: url(../images/programming-17.jpg);
@@ -60,9 +61,7 @@ a {
     text-decoration: none;
 }
 
-.text-secondary {
-    color: $secondary-color;
-}
+
 
 main {
     padding-top: 3rem;
@@ -72,19 +71,7 @@ main {
     min-height: 100vh;
     //min-height: calc(100vh - 50px);
     
-    .icons {
-        margin-top: 1rem;
-        font-size: 20px;    
-        
-        a {
-            padding: 0.4rem;
-
-            &:hover {    
-                color: $secondary-color;
-                @include easeOut;
-            }
-        }
-    }
+    
 
     &#home {
         overflow: hidden;

@@ -1,4 +1,5 @@
 $primary-color: #444;
+$show-home-image: true;
 $home-image: url(../images/programming-17.jpg);
 $background-opacity: 0.9;
 
@@ -20,9 +21,13 @@ $colors: $text-yellow, $text-green, $text-orange, $text-pink, $text-blue;
 $secondary-color: random_color($text-yellow, $text-green, $text-orange, $text-pink, $text-blue); 
 */
 
+/*
 $key: random(length($colors));
 $nth: nth($colors, $key);
 $secondary-color: $nth;
+*/
+
+$secondary-color: nth($colors, random(length($colors)));
 
 
 @mixin easeOut {
@@ -85,6 +90,7 @@ $secondary-color: $nth;
         @content;
     }
 }
+
 
 // Import medias (responsive)
 @import './screens.scss';

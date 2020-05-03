@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './home-style.scss';
+import '../sass/home-style.scss';
 import './animation.css';
 
 
@@ -55,8 +55,8 @@ const Home = () => {
                 </h2>            
 
                 <div className="icons"> 
-                    <a href="https://www.linkedin.com/in/viveirosallan" target="_blank"> <i className="fab fa-linkedin"></i> </a>           
-                    <a href="https://github.com/allan-viveiros" target="_blank"> <i className="fab fa-github"></i> </a>            
+                    <a href="https://www.linkedin.com/in/viveirosallan" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i> </a>           
+                    <a href="https://github.com/allan-viveiros" target="_blank" rel="noopener noreferrer"> <i className="fab fa-github"></i> </a>            
                     <a href="#!"> <i className="fab fa-facebook"></i> </a>
                     <a href="#!"> <i className="fab fa-instagram"></i> </a>
                 </div>
