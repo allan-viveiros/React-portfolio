@@ -1,5 +1,6 @@
 @import './home-style.scss';
-@import './header-sass.scss';
+@import './header-style.scss';
+@import './about-style.scss';
 @import './config.scss';
 
 
@@ -62,4 +63,27 @@ body {
     &.active {
         color: $secondary-color;
     }
+}
+
+//About - Bio image
+.bio-image {   
+    border: $secondary-color 3px solid;
+}
+
+// Timeline
+.timeline-body {
+    &:after {        
+        background-color: $secondary-color;
+    }
+
+    .timeline-item {
+        &:after {            
+            border: 3px solid $secondary-color;
+        }
+    }
+}
+
+// Job board
+.job {
+    border-bottom: $secondary-color 5px solid;
 }

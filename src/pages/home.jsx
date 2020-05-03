@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../sass/home-style.scss';
-import './animation.css';
+import './css/animation.css';
 
 
 const Home = () => {

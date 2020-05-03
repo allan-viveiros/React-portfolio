@@ -1,6 +1,6 @@
 import React from 'react';
 
-//import './sass/about-style.scss';
+import '../sass/about-style.scss';
 import Photo from '../images/Deadpool.jpg';
 //import Footer from '../component/footer';
 

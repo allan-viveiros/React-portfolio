@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Route, NavLink, Switch} from "react-router-dom";
 
-import '../../sass/header-sass.scss';
+import '../../sass/header-style.scss';
 import Home from '../../pages/home';
 import About from '../../pages/about';
 import MyWorks from '../../pages/my-works';
