@@ -83,4 +83,14 @@
     .main-projects {
         grid-template-columns: 1fr;   
     }
+
+    .back .btn-back {
+        .btn-dark {
+            text-align: left;
+        }
+        
+        .btn-light {
+            text-align: left;
+        }
+    }
 }

@@ -11,6 +11,20 @@
     list-style: none;
     font-family: open-'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     line-height: 1.5;   
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+     
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(#000, 0.3); 
+        border-radius: 10px;
+    }
+         
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(#000, 0.3); 
+    }
 }
 
 body {
@@ -86,4 +100,31 @@ body {
 // Job board
 .job {
     border-bottom: $secondary-color 5px solid;
+}
+
+
+// Contact form
+.main-form .container-form {
+
+    .row100 .inputBox .line{
+		background: $secondary-color; //rgba($secondary-color, 0.5);		 
+	}
+	
+	.row100 .inputBox input:focus ~ .line,
+	.row100 .inputBox input:valid ~ .line {
+        height: 100%;
+        border: 1px solid $secondary-color; //rgba($secondary-color, 0.5);
+        background-color: transparent; // rgba($secondary-color, 0.1);
+	}
+	
+	.row100 .inputBox textarea:focus ~ .line,
+	.row100 .inputBox textarea:valid ~ .line {
+		height: 100%;
+        border: 1px solid $secondary-color; //rgba($secondary-color, 0.5);
+        background-color: transparent; // rgba($secondary-color, 0.1);
+        
+
+        
+
+    }	
 }
