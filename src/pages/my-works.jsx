@@ -34,6 +34,115 @@ const MyWorks = () => (
                     linkGithub="https://github.com/allan-viveiros/super-clothing"                    
                 />
 
+<Card 
+                    imgProject={SuperClothing}
+                    imgAlt="Super Clothing"
+                    project="e-Commerce Project"
+                    title="Super Clothing"
+                    textFront="Website using firebase, 
+                        google authentication and integrated with stripe system 
+                        to make payments."
+                    textBack="Responsive website using HTML5, Sass, JavaScript, React, React Hooks, 
+                        Firebase."
+                    publish="Publish on Heroku"
+                    linkProject="https://super-clothing.herokuapp.com/"
+                    linkGithub="https://github.com/allan-viveiros/super-clothing"                    
+                />
+
+<Card 
+                    imgProject={SuperClothing}
+                    imgAlt="Super Clothing"
+                    project="e-Commerce Project"
+                    title="Super Clothing"
+                    textFront="Website using firebase, 
+                        google authentication and integrated with stripe system 
+                        to make payments."
+                    textBack="Responsive website using HTML5, Sass, JavaScript, React, React Hooks, 
+                        Firebase."
+                    publish="Publish on Heroku"
+                    linkProject="https://super-clothing.herokuapp.com/"
+                    linkGithub="https://github.com/allan-viveiros/super-clothing"                    
+                />
+
+<Card 
+                    imgProject={SuperClothing}
+                    imgAlt="Super Clothing"
+                    project="e-Commerce Project"
+                    title="Super Clothing"
+                    textFront="Website using firebase, 
+                        google authentication and integrated with stripe system 
+                        to make payments."
+                    textBack="Responsive website using HTML5, Sass, JavaScript, React, React Hooks, 
+                        Firebase."
+                    publish="Publish on Heroku"
+                    linkProject="https://super-clothing.herokuapp.com/"
+                    linkGithub="https://github.com/allan-viveiros/super-clothing"                    
+                />
+
+
+<Card 
+                    imgProject={SuperClothing}
+                    imgAlt="Super Clothing"
+                    project="e-Commerce Project"
+                    title="Super Clothing"
+                    textFront="Website using firebase, 
+                        google authentication and integrated with stripe system 
+                        to make payments."
+                    textBack="Responsive website using HTML5, Sass, JavaScript, React, React Hooks, 
+                        Firebase."
+                    publish="Publish on Heroku"
+                    linkProject="https://super-clothing.herokuapp.com/"
+                    linkGithub="https://github.com/allan-viveiros/super-clothing"                    
+                />
+
+
+<Card 
+                    imgProject={SuperClothing}
+                    imgAlt="Super Clothing"
+                    project="e-Commerce Project"
+                    title="Super Clothing"
+                    textFront="Website using firebase, 
+                        google authentication and integrated with stripe system 
+                        to make payments."
+                    textBack="Responsive website using HTML5, Sass, JavaScript, React, React Hooks, 
+                        Firebase."
+                    publish="Publish on Heroku"
+                    linkProject="https://super-clothing.herokuapp.com/"
+                    linkGithub="https://github.com/allan-viveiros/super-clothing"                    
+                />
+
+
+<Card 
+                    imgProject={SuperClothing}
+                    imgAlt="Super Clothing"
+                    project="e-Commerce Project"
+                    title="Super Clothing"
+                    textFront="Website using firebase, 
+                        google authentication and integrated with stripe system 
+                        to make payments."
+                    textBack="Responsive website using HTML5, Sass, JavaScript, React, React Hooks, 
+                        Firebase."
+                    publish="Publish on Heroku"
+                    linkProject="https://super-clothing.herokuapp.com/"
+                    linkGithub="https://github.com/allan-viveiros/super-clothing"                    
+                />
+
+
+<Card 
+                    imgProject={SuperClothing}
+                    imgAlt="Super Clothing"
+                    project="e-Commerce Project"
+                    title="Super Clothing"
+                    textFront="Website using firebase, 
+                        google authentication and integrated with stripe system 
+                        to make payments."
+                    textBack="Responsive website using HTML5, Sass, JavaScript, React, React Hooks, 
+                        Firebase."
+                    publish="Publish on Heroku"
+                    linkProject="https://super-clothing.herokuapp.com/"
+                    linkGithub="https://github.com/allan-viveiros/super-clothing"                    
+                />
+
             </div>
 
         </main>

@@ -32,6 +32,7 @@
         }
     } 
     
+    // About me
     .about-info {
         grid-template-areas: 
         'bioimage'
@@ -45,13 +46,16 @@
         grid-template-columns: 1fr;
     }
 
+    // my works
     .main-projects{
         grid-template-columns: 1fr 1fr;
     }  
 
+    // Contact Me
     .main-form {
         margin: 0;  
         flex-direction: column;
+        height: 600px;
 
         .h3-form {
             font-size: 30px;
@@ -94,7 +98,7 @@
         padding-top: 5rem;     
     }
 
-    
+    // Menu
     ul.menu-nav, div.menu-brand {
         float: none;
         width: 100%;
@@ -138,14 +142,26 @@
             .personal {
                 padding-top: 1rem;
             }
+
+            .education .timeline {
+                margin: 2px;
+                padding: 0 0 0 10px;
+
+                .timeline-body .time {
+                    left: -75px;
+                    top: -8px;
+                    opacity: 0.3;
+                    font-size: 11px;
+                }
+            }
+
+            .job {
+                margin: 2px;
+            }
         }
     }
-
-
-
-
-
     
+    // My works
     .main-projects {
         grid-template-columns: 1fr;   
     }
@@ -160,12 +176,14 @@
         }
     }
 
+    // Contact me 
     .main-form {
         padding: 0;
         margin: 0;
 
         .container-form {
             padding: 0.5rem;
+
             .contact-info span {
                 font-size: 18px;
             }

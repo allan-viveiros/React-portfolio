@@ -3,8 +3,6 @@ import React from 'react';
 import './contactMe-style.scss';
 // import CardContact from '../../components/form/cardContact';
 
-import Dead from '../../images/Deadpool.jpg'
-
 
 function ContactMe () {
   
@@ -30,10 +28,10 @@ function ContactMe () {
 
 
             <div className="container-card">
+                <div className="img-contact">
+                       <span>London </span>        
 
-
-                          
-                
+                </div>
                                            
             </div>
             

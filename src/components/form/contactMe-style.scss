@@ -43,6 +43,14 @@
     float: right;
     margin-top: 5rem;  
     justify-content: center;  
+
+    .img-contact {
+        background: url('../../images/london-night1.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        border-radius: 50%;
+    }
 }
 
 .container-form .contact-info span {
