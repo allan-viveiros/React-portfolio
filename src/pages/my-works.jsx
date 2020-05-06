@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../sass/myWorks-style.scss';
 import Card from '../components/cards/cards';
-//import Footer from '../component/footer';
+import Footer from '../components/footer/footer';
 
 import SuperClothing from '../images/projects/super-clothing.PNG'
 
@@ -38,8 +38,7 @@ const MyWorks = () => (
 
         </main>
 
-        {/* <Footer /> */}    
-
+        <Footer />
     </div>
 )
 

@@ -1,0 +1,11 @@
+@import '../../sass/config.scss';
+
+// Footer
+#main-footer {
+    text-align: left;
+    padding: 1rem;
+    background: rgba(lighten($primary-color, 10), 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    font-size: 15px;    
+}

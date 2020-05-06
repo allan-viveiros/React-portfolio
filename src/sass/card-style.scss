@@ -1,12 +1,26 @@
 @import './config.scss';
-@import './myWorks-style.scss';
+
+
+.main-card {
+    display: grid;    
+    column-gap: 1rem;
+    row-gap: 1rem;
+    //grid-template-columns: 1fr;     
+    justify-content: center;
+}
+
+.item {
+    width: 200px;
+    height: 260px;    
+}  
 
 .container {
     position: relative;
     height: 100%;
     width: 100%;
     perspective: 1200px;
-    margin-bottom: 2px;    
+    margin-bottom: 2px; 
+    
 }
 
 .front {    
@@ -18,6 +32,7 @@
     transition: all .6s;
     backface-visibility: hidden;    
     background-color: rgb(233, 233, 233);    
+    border: 5px solid rgb(23, 83, 94);
 
     .img-container {         
         z-index: 2;
@@ -56,8 +71,9 @@
             position: relative;
             top: 0.8rem;
             padding: 1px 20px 2px 5px;
-            background: $secondary-color;            
+            // background: $secondary-color;            
             margin-left: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
             clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);            
                
@@ -111,10 +127,21 @@
         margin: 5px;
     }
 
+    //Project buttons
+    .btn {
+        display: block;
+        padding: 0.1rem 0.5rem;
+        border: 0;
+        margin-bottom: 0.1rem;
+        font-size: 14px;
+        width: 100%;
+        border-radius: 8px;      
+    }  
+
     .btn-back {
         position: absolute;       
         width: 180px;
-        top: 195px;  
+        top: 195px;     
         
         .btn-dark {
             @extend .btn;
@@ -122,7 +149,7 @@
             color: #fff;    
 
             &:hover {
-                background: $secondary-color;
+                // background: $secondary-color;
                 color: #000;
             }                
         }
@@ -133,11 +160,11 @@
             color: #000;       
             
             &:hover {
-                background: $secondary-color;
+                // background: $secondary-color;
                 color: #fff;
             }
         }
-    }
+    }    
 }
 
 

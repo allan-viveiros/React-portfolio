@@ -3,7 +3,7 @@ import React from 'react';
 import '../../sass/card-style.scss';
 
 const Card = props => (
-    <div>
+    <div className="main-card">
 
         {/* Card 3d */}
         <div className="item">                 

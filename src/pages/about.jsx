@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../sass/about-style.scss';
 import Photo from '../images/Deadpool.jpg';
-//import Footer from '../component/footer';
+import Footer from '../components/footer/footer';
 
 
 const AboutMe = () => (
@@ -119,8 +119,7 @@ const AboutMe = () => (
 
         </main>
 
-         {/* <Footer /> */}        
-
+        <Footer /> 
     </div>
 )
 

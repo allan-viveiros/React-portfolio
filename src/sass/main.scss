@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: open-'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    //font-family: open-'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     line-height: 1.5;   
 
     ::-webkit-scrollbar {
@@ -102,6 +102,21 @@ body {
     border-bottom: $secondary-color 5px solid;
 }
 
+// Work cards
+.front .card-text span {
+	background: $secondary-color;  	
+}
+
+.back .btn-back {
+	.btn-dark:hover {
+		background: $secondary-color;
+	}
+	
+	.btn-light:hover {
+		background: $secondary-color;
+	}
+}
+
 
 // Contact form
 .main-form .container-form {
@@ -122,9 +137,8 @@ body {
 		height: 100%;
         border: 1px solid $secondary-color; //rgba($secondary-color, 0.5);
         background-color: transparent; // rgba($secondary-color, 0.1);
-        
-
-        
-
     }	
 }
+
+
+

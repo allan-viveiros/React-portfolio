@@ -1,6 +1,8 @@
 import React from 'react';
 
-import ContactForm from '../components/form/contact';
+// import ContactForm from '../components/form/contact';
+import ContactMe from '../components/form/contactMe';
+import Footer from '../components/footer/footer';
 
 //import Footer from '../component/footer';
 
@@ -11,12 +13,10 @@ const Contact = () => (
                 <span className="text-secondary"> Me </span> 
             </h1>
 
-            <ContactForm />
-
-
-            {/* <Footer /> */}
+            <ContactMe />            
         </main>
 
+        <Footer /> 
     </div>
 )
 
