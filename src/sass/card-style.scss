@@ -32,7 +32,7 @@
     transition: all .6s;
     backface-visibility: hidden;    
     background-color: rgb(233, 233, 233);    
-    border: 5px solid rgb(23, 83, 94);
+    //border: 3px solid rgb(29, 61, 97);
 
     .img-container {         
         z-index: 2;
@@ -61,7 +61,7 @@
             font-weight: bolder;
             margin-bottom: 2rem;
             padding-left: 0.8rem;
-            text-shadow: 3px 3px 4px black; 
+            text-shadow: 3px 3px 3px #000; 
         }
 
         span {
@@ -71,7 +71,7 @@
             position: relative;
             top: 0.8rem;
             padding: 1px 20px 2px 5px;
-            // background: $secondary-color;            
+            //background: $secondary-color;
             margin-left: 0px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 

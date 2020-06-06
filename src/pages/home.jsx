@@ -1,11 +1,26 @@
-import React from 'react';
+import React  from 'react';
 
 import '../sass/home-style.scss';
 import './css/animation.css';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 
-const Home = () => {
+const Home = () => {  
 
+    const theme = ['blue', 'green', 'orange', 'pink', 'yellow'];
+    let number;
+    const [color, setColor] = useState('');
+    
+    useEffect(() => {
+        console.log("useEffect");
+
+        number = Math.floor(Math.random() * Math.floor(5));
+
+        setColor(theme[number]);
+
+    },[])
+    
     function handlerEvent (event) {
         //console.log(event.type);
         const spans = document.querySelectorAll('h1 span')
@@ -23,50 +38,53 @@ const Home = () => {
                     span.classList.remove('animated', 'rubberBand')
                 })
             );
-        }
-        
+        }            
     }
 
 
     return ( 
-        <div className="main-div">
-        
+        <div className="main-div">        
             <div className="gray-div">
-                
-            <main id="home">
-                <div className="text">
-                    <h1 className="lg-heading" onMouseOver={handlerEvent} onMouseOut={handlerEvent}> 
-                        <span className="letter">A</span>
-                        <span className="letter">l</span>
-                        <span className="letter">l</span>
-                        <span className="letter">a</span>
-                        <span className="letter">n </span>
-                               
-                        <span className="text-secondary"> Viveiros </span> 
-                    </h1>
+                <div className="App">
+                    
+                    <main id="home">
+                        <div className="text">
+                            <h1 className="lg-heading" onMouseOver={handlerEvent} onMouseOut={handlerEvent}> 
+                                <span className="letter">A</span>
+                                <span className="letter">l</span>
+                                <span className="letter">l</span>
+                                <span className="letter">a</span>
+                                <span className="letter">n </span>
+                                    
+                                <span className={`text-secondary ${color}`}> Viveiros </span> 
+                            </h1>
+                        </div>
+
+                        <h2 className="sm-heading"> 
+                            Web Developer 
+                            <span className="home-skills"> 
+                                <p> HTML / JavaScript / SASS / React-js </p>
+                            </span>
+
+                        </h2>            
+
+                        <div className="icons"> 
+                            <a href="https://www.linkedin.com/in/viveirosallan" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i> </a>           
+                            <a href="https://github.com/allan-viveiros" target="_blank" rel="noopener noreferrer"> <i className="fab fa-github"></i> </a>            
+                            <a href="#!"> <i className="fab fa-facebook"></i> </a>
+                            <a href="#!"> <i className="fab fa-instagram"></i> </a>
+                        </div>
+
+                    </main>
+
                 </div>
-
-                <h2 className="sm-heading"> 
-                    Web Developer 
-                    <span className="home-skills"> 
-                        <p> HTML / JavaScript / SASS / React-js </p>
-                    </span>
-
-                </h2>            
-
-                <div className="icons"> 
-                    <a href="https://www.linkedin.com/in/viveirosallan" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i> </a>           
-                    <a href="https://github.com/allan-viveiros" target="_blank" rel="noopener noreferrer"> <i className="fab fa-github"></i> </a>            
-                    <a href="#!"> <i className="fab fa-facebook"></i> </a>
-                    <a href="#!"> <i className="fab fa-instagram"></i> </a>
-                </div>
-
-            </main>
 
             </div>
 
         </div>
-    );
+    );                                  
+
+  
     
 }
 

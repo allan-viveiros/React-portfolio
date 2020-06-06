@@ -29,7 +29,7 @@ function ContactMe () {
 
             <div className="container-card">
                 <div className="img-contact">
-                       <span>London </span>        
+                       <span> </span>        
 
                 </div>
                                            

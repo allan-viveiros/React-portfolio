@@ -27,6 +27,7 @@
     }
 }
 
+
 body {
     background: $primary-color;
     color: set-text-color($primary-color);
@@ -36,8 +37,25 @@ body {
     line-height: 1.5;    
 }
 
-.text-secondary {
-    color: $secondary-color;
+
+.text-secondary {   
+    color: $secondary-color; 
+
+    &.blue {
+        color: #2876f8;
+    }
+    &.green {
+        color: #4ae54a;
+    }
+    &.orange {
+        color: #ff7400;
+    }
+    &.pink {
+        color: #ff5f5f;
+    }
+    &.yellow {
+        color: #eece1a;
+    }
 }
 
 // Home icons
@@ -104,7 +122,7 @@ body {
 
 // Work cards
 .front .card-text span {
-	background: $secondary-color;  	
+    background: rgb(152, 137, 221);	
 }
 
 .back .btn-back {
