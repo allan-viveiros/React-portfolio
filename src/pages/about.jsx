@@ -3,14 +3,14 @@ import React from 'react';
 import '../sass/about-style.scss';
 import Photo from '../images/Deadpool.jpg';
 import Footer from '../components/footer/footer';
-
+import Resume from '../documents/Allan_Viveiros.pdf';
 
 const AboutMe = () => (
     <div className="div-about">        
         
         <main id="about">
             <h1 className="lg-heading"> 
-                About <span className="text-secondary"> Me </span> 
+                About <span className="text-secondary blue"> Me </span> 
             </h1>
 
             <h2 className="sm-heading"> Let me tell you a few things about me.  </h2>
@@ -19,7 +19,7 @@ const AboutMe = () => (
                 <img src={Photo} alt="Allan Romero" className="bio-image" />
 
                 <div className="bio">
-                    <h3 className="text-secondary"> Bio </h3>
+                    <h3 className="text-secondary blue"> Bio </h3>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Aperiam omnis labore non neque eligendi consequatur odit possimus, 
@@ -38,11 +38,24 @@ const AboutMe = () => (
                             SASS - React - Nodejs - Redux -
                             Bootstrap - Firebase - SQL -
                             Hooks - jQuery - Json
-                        </p>                    
+                        </p>  
+
+                        <a href={Resume} target='_blank' rel="noopener noreferrer">    
+                            <div className="btn-download"> 
+                                <span> Download Resume </span>
+                            </div>
+                        </a>
+
+                        <div class="btn-download-container">
+                            <a href={Resume} target='_blank' rel="noopener noreferrer">    
+                                <button class="button-border">
+                                    Download Resume 
+                                </button>
+                            </a>
+                        </div>  
+
+
                     </div>
-                        
-                    <button> Download resume </button>
-                    <button> Contact Me </button>
                 </div>
             
 

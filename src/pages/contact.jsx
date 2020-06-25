@@ -9,7 +9,7 @@ const Contact = () => (
     <div className="div-contact">
         <main id="contact">
             <h1 className="lg-heading" > How to reach 
-                <span className="text-secondary"> Me </span> 
+                <span className="text-secondary pink"> Me </span> 
             </h1>
 
             <ContactMe />

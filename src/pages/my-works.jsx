@@ -16,7 +16,7 @@ const MyWorks = () => (
         <main id="work">
 
             <h1 className="lg-heading"> 
-                My <span className="text-secondary"> Works </span> 
+                My <span className="text-secondary green"> Works </span> 
             </h1>
             <h2 className="sm-heading"> Check out some of my projects.  </h2>
             

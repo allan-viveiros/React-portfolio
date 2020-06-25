@@ -99,25 +99,29 @@ body {
 
 //About - Bio image
 .bio-image {   
-    border: $secondary-color 3px solid;
+    //border: $secondary-color 3px solid;
+    border: #4ae54a 3px solid;
 }
 
 // Timeline
 .timeline-body {
     &:after {        
-        background-color: $secondary-color;
+        //background-color: $secondary-color;
+        background-color: #4ae54a;
     }
 
     .timeline-item {
         &:after {            
-            border: 3px solid $secondary-color;
+            //border: 3px solid $secondary-color;
+            border: #4ae54a 3px solid;
         }
     }
 }
 
 // Job board
 .job {
-    border-bottom: $secondary-color 5px solid;
+    //border-bottom: $secondary-color 5px solid;
+    border-bottom: #4ae54a 5px solid;
 }
 
 // Work cards

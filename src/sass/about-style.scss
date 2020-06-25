@@ -45,13 +45,142 @@
             padding-top: 0.5rem;
             padding-bottom: 1rem;
             width: 100%;
-            text-align: center;  
+            text-align: center;
+              
             line-height: 2rem;      
         }     
 
-        button {
-            margin: 3px;
-            padding: 1px 3px 1px 3px;
+        .btn-download {
+            width: 180px;
+            height: 35px;
+            margin: 10px auto;
+            background: rgba(#ccc, 0.1);
+            //position: relative;
+            //margin-bottom: 25px;
+            //border-radius: 32px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.1s ease-in-out;
+            //box-shadow:  1px 0 5px 2px #fff;
+            border: outset 2px #fff;
+            color: #ccc;
+
+            span {
+                line-height: 30px;              
+                font-size: 18px;
+                font-weight: semibold;  
+            }
+
+            &:hover {
+                //box-shadow: inset 1px 1px 5px 2px #444;
+                box-shadow: 1px 0 5px 1px #fff;
+                //border: outset 2px #fff;
+                color: #fff;
+            }
+
+            &:active {
+                border: inset 2px #fff;
+                box-shadow: none;
+                
+                span {
+                    font-size: 17px;                
+                }
+            }
+        }
+
+
+        // Button component
+        .button-border {
+            position: relative;
+            padding: 0.5em 1em;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+            font-size: 18px;
+            margin: 1em 0.8em;
+            color: #fff;    
+        }            
+    
+        .button-border::after,
+        .button-border::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            border: 2px solid;
+            transition: all 0.5s ease;
+            border-radius: 2px;
+        }
+
+        .button-border::after {
+            bottom: 0;
+            right: 0;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: #2876f8;
+            border-right-color: #2876f8;
+        }
+
+        .button-border::before {
+            top: 0;
+            left: 0;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-top-color: #4ae54a;
+            border-left-color: #4ae54a;
+        }
+
+        .button-border:hover:after {
+            border-bottom-color: #2876f8;
+            border-right-color: #2876f8;
+            border-top-color: #2876f8;
+            border-left-color: #2876f8;                
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s ease;
+        }
+
+        .button-border:hover:before {
+            border-bottom-color: #4ae54a;
+            border-right-color: #4ae54a;
+            border-top-color: #4ae54a;
+            border-left-color: #4ae54a;  
+            width: 100%;
+            height: 100%; 
+            transition: all 0.5s ease;
+        }  
+        
+        .button-border:hover {
+            text-shadow: 3px 3px 3px black; 
+            color: #fff;  
+            transition: all 0.5s ease;     
+        }
+
+        .button-border:active:after {
+            border-bottom-color: #2876f8;
+            border-right-color: #2876f8;
+            border-top-color: #2876f8;
+            border-left-color: #2876f8;              
+            width: 99%;
+            height: 95%;
+            transition: none;
+        }
+
+        .button-border:active:before {
+            border-bottom-color: #4ae54a;
+            border-right-color: #4ae54a;
+            border-top-color: #4ae54a;
+            border-left-color: #4ae54a;  
+            width: 99%;
+            height: 95%; 
+            transition: none;   
+        }   
+
+        .button-border:active {
+            text-shadow: none;
+            transition: none;
         }
     }
     
