@@ -14,7 +14,7 @@
     grid-column-gap: 30px;
     padding-right: 2rem;
     grid-template-areas: 
-    'bioimage bio bio'
+    'bioimage bio bio'    
     'personal education education'
     'job1 job2 job3';
     grid-template-columns: 1fr 1fr 1fr;
@@ -24,8 +24,8 @@
         margin: auto;
         border-radius: 50%;
         // border: $secondary-color 3px solid;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     
     .bio {
@@ -234,7 +234,7 @@
         
                     .time {
                         position: absolute;
-                        left: -88px;
+                        left: -50px;
                         top: -8px;
                         opacity: 0.3;
                         font-size: 12px;    
@@ -244,10 +244,16 @@
                         margin: 20px;
                         padding-bottom: 10px;
                         border-bottom: 1px dashed $primary-color;
-                        font-size: 14px;
+                        font-size: 15px;
+                        color: #fff;
         
                         .title {
                             font-weight: 500;                    
+                        }
+
+                        .sub-text{
+                            color: rgb(180, 180, 180);
+                            font-size: 12px;
                         }
                     }
         
@@ -259,12 +265,12 @@
 
     .job1 {
         grid-area: job1;
-        // visibility: hidden;
+        visibility: hidden;
     }
     
     .job2 {
         grid-area: job2;
-        // visibility: hidden;
+        visibility: hidden;
     }
     
     .job3 {

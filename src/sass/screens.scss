@@ -51,6 +51,10 @@
         grid-template-columns: 1fr 1fr;
     }  
 
+    .btn-dark, .btn-light {
+        text-align: left;
+    }
+
     // Contact Me
     .main-form {
         margin: 0;  
@@ -138,7 +142,7 @@
         .about-info {
             padding: 2px;
             margin: 2px;
-
+            
             .personal {
                 padding-top: 1rem;
             }
@@ -148,7 +152,7 @@
                 padding: 0 0 0 10px;
 
                 .timeline-body .time {
-                    left: -75px;
+                    left: -50px;
                     top: -8px;
                     opacity: 0.3;
                     font-size: 11px;
@@ -164,16 +168,11 @@
     // My works
     .main-projects {
         grid-template-columns: 1fr;   
-    }
+        justify-items: center;
+    }    
 
-    .back .btn-back {
-        .btn-dark {
-            text-align: left;
-        }
-        
-        .btn-light {
-            text-align: left;
-        }
+    .btn-dark, .btn-light {
+        text-align: left;
     }
 
     // Contact me 
