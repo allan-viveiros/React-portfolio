@@ -79,8 +79,8 @@ const MyWorks = () => (
                     textBack="HTML5, CSS3, JavaScript, React , React Hooks, 
                         Material UI, Charts.js, API data fetching."
                     publish="Publish on Heroku."
-                    linkProject="https://covid19-tckr.herokuapp.com/"
-                    linkGithub="https://github.com/allan-viveiros/covid19-tracker"                    
+                    linkProject="https://web-covid19-tracker.herokuapp.com"
+                    linkGithub="https://github.com/allan-viveiros/covid"                    
                 />
             </div>            
 
