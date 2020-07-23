@@ -24,19 +24,22 @@
     padding-bottom: 1rem; 
 }
 
-.item {
-    .template-img {
-        width: 200px;
-        height: auto;
-        border: 3px solid #444;
-    }
+.template-item {
+  width: 200px;
+  height: 260px;  
 
-    .template-img:hover {
-        opacity: 0.7;
-        border: 3px #2876f8 solid;
-        -webkit-transition: all 0.5s ease-out;
-        transition: all 0.5s ease-out;
-    }
+  .template-img {
+    width: 200px;
+    height: auto;
+    border: 3px solid #444;
+  }
+
+  .template-img:hover {
+    opacity: 0.7;
+    border: 3px #2876f8 solid;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
 }
 
 .btn, .back .btn-back .btn-dark, .back .btn-back .btn-light, .btn-dark, .btn-light {

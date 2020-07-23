@@ -136,26 +136,26 @@
             padding: 2px;
             margin: 2px;
             justify-content: center;
-            width: 100%;
+            width: 100%;    
         }
 
         .about-info {
             padding: 2px;
-            margin: 2px;
+            margin: 2px;            
             
             .personal {
-                padding-top: 1rem;
+                padding-top: 1rem;               
             }
 
             .education .timeline {
                 margin: 2px;
-                padding: 0 0 0 10px;
+                padding: 0 0 0 10px;                
 
                 .timeline-body .time {
                     left: -50px;
                     top: -8px;
                     opacity: 0.3;
-                    font-size: 11px;
+                    font-size: 11px;    
                 }
             }
 
@@ -181,10 +181,10 @@
         margin: 0;
 
         .container-form {
-            padding: 0.5rem;
+            padding: 1rem;
 
             .contact-info span {
-                font-size: 18px;
+                font-size: 18px;                
             }
         }
     }

@@ -21,12 +21,15 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: rgba($primary-color, $background-opacity);
+        //background: rgba($primary-color, $background-opacity);
+        //background: radial-gradient(#525252, #131313);
+        //opacity: 0.6;
     }
 }
 
 .gray-div {
-    background: rgba($primary-color, $background-opacity);
+    background: radial-gradient(#525252, #131313);
+    opacity: 0.9;
 }
 
 .text span {
@@ -51,7 +54,7 @@ h1, h2, h3 {
     &.sm-heading {
         margin-bottom: 4rem;
         padding: 1px 1px;
-        background: rgba($primary-color, 0.2); 
+        background: rgba(#222, 0.1); 
         font-size: 2rem;        
     }
 }
@@ -62,10 +65,7 @@ a {
 }
 
 main {
-    padding-top: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 3rem 3rem 3rem;
     min-height: 100vh;
     //min-height: calc(100vh - 50px);
     

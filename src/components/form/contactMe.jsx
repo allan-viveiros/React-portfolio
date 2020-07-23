@@ -8,7 +8,7 @@ function ContactMe () {
   
     return(
         <div className="main-form">
-            <h3 className="h3-form"> Contact me directly </h3> 
+            <h3 className="h3-form"> Get In Touch </h3> 
 
             <div className="container-form">
                 <div className="contact-info">
@@ -30,9 +30,7 @@ function ContactMe () {
             <div className="container-card">
                 <div className="img-contact">
                        <span> </span>        
-
-                </div>
-                                           
+                </div>                                           
             </div>
             
 

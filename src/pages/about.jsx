@@ -22,21 +22,30 @@ const AboutMe = () => (
                 <div className="bio">
                     <h3 className="text-secondary blue"> Bio </h3>
 
-                    <p>
-                    Hi, my name is Allan Romero de Souza Viveiros. I graduated in information systems 
-                    and post-graduated in database development. I've been working in the IT sector for 
-                    about 10 years in different areas such as Oracle developer and analyst, and 
-                    business system analyst. At present, I live in London Ontario, and I'm trying to 
-                    expand my knowledge in web development considering that it is not only a current 
-                    platform but also it is on continuous expansion for the future.
-                    Regarding the current search I made about the programming languages for web 
-                    development around the world, I became so attracted by the JavaScript language 
-                    that it gave to me the motivation to study, and then I achieved tools like React-js 
-                    and Node-js. After a journey of long hours reading and coding I can say that I feel 
-                    comfortable building projects using technologies such as HTML5, CSS3, Sass, 
-                    Javascript, React-js, Node-js, Hooks.
-                    It is possible to check some of my projects here.                       
-                    </p>
+                    <div className="bio-text">
+                        <p>
+                        Hi, my name is Allan Romero de Souza Viveiros. I graduated in information systems 
+                        and post-graduated in database development. I've been working in the IT sector for 
+                        about 10 years in different areas such as Oracle developer and analyst, and 
+                        business system analyst. </p>
+                        
+                        <p>
+                        At present, I live in London Ontario, and I'm trying to 
+                        expand my knowledge in web development considering that it is not only a current 
+                        platform but also it is on continuous expansion for the future. </p>
+                        
+                        <p>
+                        Regarding the current search I made about the programming languages for web 
+                        development around the world, I became so attracted by the JavaScript language 
+                        that it gave to me the motivation to study, and then I achieved tools like React-js 
+                        and Node-js. </p>
+                        
+                        <p>
+                        After a journey of long hours reading and coding I can say that I feel 
+                        comfortable building projects using technologies such as HTML5, CSS3, Sass, 
+                        Javascript, React-js, Node-js, Hooks.
+                        It is possible to check some of my projects <strong>here</strong>. </p>
+                    </div>
 
                 </div>
             

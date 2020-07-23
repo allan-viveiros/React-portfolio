@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../sass/myWorks-style.scss';
 import Card from '../components/cards/cards';
+import CardTemplate from '../components/card-template/cardTemplate';
 import Footer from '../components/footer/footer';
 
 //Projects
@@ -82,7 +83,7 @@ const MyWorks = () => (
                     linkProject="https://web-covid19-tracker.herokuapp.com"
                     linkGithub="https://github.com/allan-viveiros/covid"                    
                 />
-            </div>            
+            </div>       
 
             <h2 className="title-projects"> 
                 Games Js 
@@ -157,7 +158,7 @@ const MyWorks = () => (
                 />
 
 
-            </div>
+            </div> 
           
             
 
@@ -166,75 +167,39 @@ const MyWorks = () => (
                 <p> Some templates developed using HTML, CSS, and bootstrap </p>
             </h2>
 
-            <div className="main-projects">
+            <div className="main-projects"> 
 
                 {/* Landing page */}
-                <div className="item">                    
-                    <img className="template-img" src={Landing} alt="Landing page" />
-                    
-                    <a href="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/4.Landing%20page/LandinPage.html" 
-                     className="btn-light" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fas fa-eye"></i> Project
-                    </a>             
-
-                    <a href="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/4.Landing%20page" 
-                     className="btn-dark" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fab fa-github"></i> Github
-                    </a>
-                </div>
-
+                <CardTemplate
+                    title="Landing page"
+                    picture={Landing}
+                    project_link="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/4.Landing%20page/LandinPage.html"
+                    github_link="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/4.Landing%20page"
+                />  
+               
                 {/* Awesome page */}
-                <div className="item">                    
-                    <img className="template-img" src={Awesome} alt="Awesome page" />
-                    
-                    <a href="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/5.Website/Awesome.html" 
-                     className="btn-light" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fas fa-eye"></i> Project
-                    </a>          
-
-                    <a href="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/5.Website" 
-                     className="btn-dark" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fab fa-github"></i> Github
-                    </a>
-                </div>
+                <CardTemplate
+                    title="Awesome page"
+                    picture={Awesome}
+                    project_link="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/5.Website/Awesome.html"
+                    github_link="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/5.Website"
+                />  
 
                 {/* Lovely page */}
-                <div className="item">                    
-                    <img className="template-img" src={Lovely} alt="Lovely page" />
-                    
-                    <a href="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/6.Lovely%20Website/Lovely.html" 
-                     className="btn-light" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fas fa-eye"></i> Project
-                    </a>          
-
-                    <a href="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/6.Lovely%20Website" 
-                     className="btn-dark" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fab fa-github"></i> Github
-                    </a>
-                </div>
+                <CardTemplate
+                    title="Lovely page"
+                    picture={Lovely}
+                    project_link="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/6.Lovely%20Website/Lovely.html"
+                    github_link="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/6.Lovely%20Website"
+                />              
 
                 {/* Maths page */}
-                <div className="item">                    
-                    <img className="template-img" src={Maths} alt="Maths page" />
-                    
-                    <a href="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/1.Maths%20Website/Maths.html" 
-                     className="btn-light" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fas fa-eye"></i> Project
-                    </a>          
-
-                    <a href="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/1.Maths%20Website" 
-                     className="btn-dark" rel="noopener noreferrer" target="_blank">
-
-                        <i className="fab fa-github"></i> Github
-                    </a>
-                </div>
+                <CardTemplate
+                    title="Maths page"
+                    picture={Maths}
+                    project_link="https://allan-viveiros.github.io/Portfolio-allan/frontend-projects/1.Maths%20Website/Maths.html"
+                    github_link="https://github.com/allan-viveiros/Portfolio-allan/tree/master/src/frontend-projects/1.Maths%20Website"
+                />
                 
             </div>
 

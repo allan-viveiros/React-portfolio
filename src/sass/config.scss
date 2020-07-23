@@ -50,7 +50,7 @@ $secondary-color: nth($colors, random(length($colors)));
                 width: 100%;
                 height: 100%;
                 z-index: -1;
-                background: rgba($primary-color, $background-opacity);
+                background: rgba(yellow, $background-opacity);
             }
         }
     }

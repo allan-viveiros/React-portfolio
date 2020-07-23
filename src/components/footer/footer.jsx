@@ -9,7 +9,7 @@ class Footer extends Component {
             <div>
 
                 <footer id="main-footer">
-                    &copy;Developed by Allan Romero Viveiros
+                    <span>&copy;Developed by</span> Allan Viveiros
                 </footer>
 
             </div>
