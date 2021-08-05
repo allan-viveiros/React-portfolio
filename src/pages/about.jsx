@@ -114,8 +114,7 @@ const AboutMe = () => (
                                 <div className="content">
                                     <h2 className="title"> Oracle analyst and PL/SQL developer </h2>
                                     <p className="sub-text"> Job position 2010 - 2014 </p>
-                                    <p> Faculdade de informatica Lemos de Castro - Brazil, Rio de Janeiro.
-                                        System analysis and development. 
+                                    <p> Industria de produtos alimentícios Piraque, Brazil, Rio de Janeiro. 
                                     </p>
                                 </div>
                             </div>
@@ -125,8 +124,8 @@ const AboutMe = () => (
                                 <div className="content">
                                     <h2 className="title"> Information Systems </h2>
                                     <p className="sub-text"> Bachelor degree 2006 - 2011 </p>
-                                    <p> Instituto Infet - Brazil, Rio de Janeiro.
-                                        Oracle database management system and others SGBD. 
+                                    <p> Faculdade de Informatica Lemos de Castro (FILC) - Brazil, Rio de Janeiro.
+                                        Information Systems. 
                                     </p>
                                 </div>
                             </div>
